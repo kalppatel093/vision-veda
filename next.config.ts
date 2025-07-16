@@ -15,7 +15,19 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    domains: [
+      'upload.wikimedia.org',
+      'tse3.mm.bing.net',
+      'tse4.mm.bing.net',
+      'i.ibb.co',
+      'hebbkx1anhila5yf.public.blob.vercel-storage.com'
+    ],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
 }
 
