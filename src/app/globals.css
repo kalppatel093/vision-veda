@@ -65,7 +65,12 @@
   }
   body {
     @apply bg-background text-foreground;
-    cursor: none; /* Hide default cursor for custom cursor */
+    cursor: auto; /* Show default cursor */
+  }
+  
+  /* Add cursor styles */
+  button, a, [role="button"], .card, .interactive {
+    cursor: pointer !important;
   }
 }
 
