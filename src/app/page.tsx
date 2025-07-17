@@ -5,6 +5,8 @@ import { Star, Eye, Monitor, ArrowRight } from "lucide-react"
 import Image from "next/image"
 import { CountdownTimer } from "../components/countdown-timer"
 import { OrderForm } from "../components/orderForm";
+import Link from "next/link"
+import { Phone, Mail } from "lucide-react"
 
 // Add scroll helper function
 const scrollToForm = () => {
@@ -128,6 +130,30 @@ export default function VisionVedaLanding() {
           🌟 डॉक्टर द्वारा तैयार • 100% प्राकृतिक
         </p>
       </div>
+
+      {/* Header/Navbar */}
+      <header className="sticky top-10 z-40 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-between items-center py-4">
+            <Link href="/" className="flex items-center space-x-2">
+              <Eye className="h-6 w-6 text-blue-600" />
+              <span className="text-xl font-bold">विजन वेदा</span>
+            </Link>
+            <nav className="hidden md:flex space-x-6">
+              <Link href="#benefits" className="text-gray-600 hover:text-blue-600">लाभ</Link>
+              <Link href="#testimonials" className="text-gray-600 hover:text-blue-600">समीक्षाएं</Link>
+              <Link href="#ingredients" className="text-gray-600 hover:text-blue-600">सामग्री</Link>
+              <Link href="#pricing" className="text-gray-600 hover:text-blue-600">मूल्य</Link>
+              <Link href="#contact" className="text-gray-600 hover:text-blue-600">संपर्क</Link>
+            </nav>
+            <div className="md:hidden">
+              <button className="text-gray-600 hover:text-blue-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6"><path d="M3 12h18"/><path d="M3 6h18"/><path d="M3 18h18"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
 
       {/* Hero Section */}
       <section className="relative bg-white py-20 md:py-32 mt-10">
@@ -414,9 +440,63 @@ export default function VisionVedaLanding() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-100 text-gray-800 py-12">
+      <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="text-center">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                  <Eye className="h-5 w-5 text-white" />
+                </div>
+                <span className="text-xl font-bold">विजन वेदा</span>
+              </div>
+              <p className="text-gray-400">
+              अपनी आंखों की रोशनी वापस लाएं
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold mb-4">तेज लिंक</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li><Link href="#" className="hover:text-white">होम</Link></li>
+                <li><Link href="#benefits" className="hover:text-white">लाभ</Link></li>
+                <li><Link href="#ingredients" className="hover:text-white">सामग्री</Link></li>
+                <li><Link href="#testimonials" className="hover:text-white">समीक्षाएं</Link></li>
+                <li><Link href="#pricing" className="hover:text-white">मूल्य</Link></li>
+                <li><Link href="#contact" className="hover:text-white">संपर्क</Link></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold mb-4">समर्थन</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li><Link href="#" className="hover:text-white">ग्राहक सेवा</Link></li>
+                <li><Link href="#" className="hover:text-white">शिपिंग जानकारी</Link></li>
+                <li><Link href="#" className="hover:text-white">वापसी</Link></li>
+                <li><Link href="#" className="hover:text-white">गोपनीयता नीति</Link></li>
+                <li><Link href="#" className="hover:text-white">उपयोग की शर्तें</Link></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold mb-4">संपर्क जानकारी</h3>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <Phone className="w-5 h-5 text-blue-400" />
+                  <span className="text-gray-400">+91 98765 43210</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Mail className="w-5 h-5 text-blue-400" />
+                  <span className="text-gray-400">support@visionveda.com</span>
+                </div>
+                <div className="pt-4">
+                  <p className="text-sm text-gray-500">ग्राहक समर्थन 24/7 है</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
             <p>&copy; 2024 विजन वेदा. सर्वाधिकार सुरक्षित.</p>
           </div>
         </div>
