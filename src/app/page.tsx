@@ -264,6 +264,160 @@ export default function VisionVedaLanding() {
         </div>
       </section>
 
+      {/* Add Before/After Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">पहले और बाद में</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              विजन वेदा कैसे आपकी आंखों की समस्याओं को दूर करता है
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* White Cataract */}
+            <Card className="border border-gray-200 interactive">
+              <CardContent className="p-6">
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold text-center">सफेद मोतियाबिंद</h3>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <div className="relative aspect-square">
+                        <Image
+                          src="https://cdn.hexahealth.com/Image/webp/480x480/61b9f95b-7b6e-40ac-b0f8-fa10725479d5.webp"
+                          alt="White Cataract Before"
+                          width={400}
+                          height={500}
+                          className="rounded-lg object-cover border-2 border-red-200 h-full"
+                        />
+                      </div>
+                      <p className="text-center text-red-500 font-medium">पहले</p>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="relative aspect-square">
+                        <Image
+                          src="https://tse2.mm.bing.net/th/id/OIP.dULvtdQ7PE8dFMAb0n_9SQHaEK?pid=Api&P=0&h=180"
+                          alt="White Cataract After"
+                          width={400}
+                          height={400}
+                          className="rounded-lg object-cover border-2 border-green-200 h-full"
+                        />
+                      </div>
+                      <p className="text-center text-green-500 font-medium">बाद में</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Black Cataract */}
+            <Card className="border border-gray-200 interactive">
+              <CardContent className="p-6">
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold text-center">काला मोतियाबिंद</h3>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <div className="relative aspect-square">
+                        <Image
+                          src="https://tse2.mm.bing.net/th/id/OIP.UYAWdOmdg-5zm0Mm3l88QgHaHa?pid=Api&P=0&h=180"
+                          alt="Black Cataract Before"
+                          width={400}
+                          height={400}
+                          className="rounded-lg object-cover border-2 border-red-200"
+                        />
+                      </div>
+                      <p className="text-center text-red-500 font-medium">पहले</p>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="relative aspect-square">
+                        <Image
+                          src="https://tse2.mm.bing.net/th/id/OIP.IA87Pzz5VUdGTX2bsF0IagHaD4?pid=Api&P=0&h=180"
+                          alt="Black Cataract After"
+                          width={400}
+                          height={400}
+                          className="rounded-lg object-cover border-2 h-full border-green-200"
+                        />
+                      </div>
+                      <p className="text-center text-green-500 font-medium">बाद में</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Near/Far Sightedness */}
+            {/* <Card className="border border-gray-200 interactive">
+              <CardContent className="p-6">
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold text-center">दूर/नजदीक की दृष्टि</h3>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <div className="relative aspect-square">
+                        <Image
+                          src="https://placeholder.com/400x400"
+                          alt="Vision Problem Before"
+                          width={400}
+                          height={400}
+                          className="rounded-lg object-cover border-2 border-red-200"
+                        />
+                      </div>
+                      <p className="text-center text-red-500 font-medium">पहले</p>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="relative aspect-square">
+                        <Image
+                          src="https://placeholder.com/400x400"
+                          alt="Vision Problem After"
+                          width={400}
+                          height={400}
+                          className="rounded-lg object-cover border-2 border-green-200"
+                        />
+                      </div>
+                      <p className="text-center text-green-500 font-medium">बाद में</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card> */}
+
+            {/* Eye Strain */}
+            <Card className="border border-gray-200 interactive">
+              <CardContent className="p-6">
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold text-center">आंखों का तनाव</h3>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <div className="relative aspect-square">
+                        <Image
+                          src="https://tse4.mm.bing.net/th/id/OIP.EqhFdXLYw-dHPTuCdlgTdAHaJ3?pid=Api&P=0&h=180"
+                          alt="Eye Strain Before"
+                          width={400}
+                          height={400}
+                          className="rounded-lg object-cover border-2 border-red-200"
+                        />
+                      </div>
+                      <p className="text-center text-red-500 font-medium">पहले</p>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="relative aspect-square">
+                        <Image
+                          src="https://tse3.mm.bing.net/th/id/OIP.YFVHKv4su1Is8y0ElvydugHaGN?pid=Api&P=0&h=180"
+                          alt="Eye Strain After"
+                          width={400}
+                          height={800}
+                          className="rounded-lg object-cover border-2 h-full border-green-200"
+                        />
+                      </div>
+                      <p className="text-center text-green-500 font-medium">बाद में</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Countdown Timer */}
       <section className="py-8 bg-blue-600 text-white">
         <div className="container mx-auto px-4">
