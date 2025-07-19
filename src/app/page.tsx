@@ -16,17 +16,6 @@ const scrollToForm = () => {
   }
 }
 
-// Remove the globalStyles variable since we're using inline styles
-// Add CSS to make cursor visible
-// const globalStyles = `
-//   * {
-//     cursor: auto;
-//   }
-//   
-//   button, a, [role="button"] {
-//     cursor: pointer !important;
-//   }
-// `;
 
 // Server-side data fetching
 function getTestimonials() {
@@ -191,7 +180,7 @@ export default function VisionVedaLanding() {
                   </li>
                   <li className="flex items-center">
                     <span className="text-blue-600 mr-2">✦</span>
-                    नेतियाबंद की समस्या से निजात
+                    मोतियाबिंद की समस्या से निजात
                   </li>
                 </ul>
               </div>
@@ -267,10 +256,13 @@ export default function VisionVedaLanding() {
       {/* Add Before/After Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">पहले और बाद में</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              विजन वेदा कैसे आपकी आंखों की समस्याओं को दूर करता है
+          {/* Add a heading emphasizing Vision Veda's unique benefits */}
+          <div className="text-center mb-8">
+            <p className="text-xl text-blue-600 font-bold">
+              केवल विजन वेदा से संभव
+            </p>
+            <p className="text-gray-600">
+              हमारे आयुर्वेदिक फॉर्मूला से दिखने वाले चमत्कारी परिणाम
             </p>
           </div>
 
@@ -292,6 +284,14 @@ export default function VisionVedaLanding() {
                         />
                       </div>
                       <p className="text-center text-red-500 font-medium">पहले</p>
+                      <ul className="text-sm text-gray-700 space-y-1 mt-2 pl-4">
+                        <li>• धुंधली दृष्टि</li>
+                        <li>• रोशनी के प्रति संवेदनशीलता</li>
+                        <li>• रंगों का धुंधलापन</li>
+                        <li>• रात में देखने में परेशानी</li>
+                        <li className="font-bold">• आंखों में दर्द और जलन</li>
+                        <li className="font-bold">• पढ़ने में कठिनाई</li>
+                      </ul>
                     </div>
                     <div className="space-y-2">
                       <div className="relative aspect-square">
@@ -303,7 +303,15 @@ export default function VisionVedaLanding() {
                           className="rounded-lg object-cover border-2 border-green-200 h-full"
                         />
                       </div>
-                      <p className="text-center text-green-500 font-medium">बाद में</p>
+                      <p className="text-center text-green-500 font-medium">विजन वेदा के बाद</p>
+                      <ul className="text-sm text-gray-700 space-y-1 mt-2 pl-4">
+                        <li>• स्पष्ट और साफ दृष्टि</li>
+                        <li>• रंगों की बेहतर पहचान</li>
+                        <li>• रोशनी के प्रति कम संवेदनशीलता</li>
+                        <li>• बिना चश्मे के पढ़ने की क्षमता</li>
+                        <li className="font-bold">• <span className="text-green-600">विजन वेदा के उपयोग से</span> आंखों का दर्द गायब</li>
+                        <li className="font-bold">• <span className="text-green-600">विजन वेदा से</span> पढ़ने की क्षमता में सुधार</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -327,6 +335,14 @@ export default function VisionVedaLanding() {
                         />
                       </div>
                       <p className="text-center text-red-500 font-medium">पहले</p>
+                      <ul className="text-sm text-gray-700 space-y-1 mt-2 pl-4">
+                        <li>• गंभीर दृष्टि हानि</li>
+                        <li>• आंखों में दर्द और जलन</li>
+                        <li>• दोहरी दृष्टि</li>
+                        <li>• आंखों में सूजन</li>
+                        <li className="font-bold">• रात में ड्राइविंग में समस्या</li>
+                        <li className="font-bold">• चश्मे पर अत्यधिक निर्भरता</li>
+                      </ul>
                     </div>
                     <div className="space-y-2">
                       <div className="relative aspect-square">
@@ -338,7 +354,15 @@ export default function VisionVedaLanding() {
                           className="rounded-lg object-cover border-2 h-full border-green-200"
                         />
                       </div>
-                      <p className="text-center text-green-500 font-medium">बाद में</p>
+                      <p className="text-center text-green-500 font-medium">विजन वेदा के बाद</p>
+                      <ul className="text-sm text-gray-700 space-y-1 mt-2 pl-4">
+                        <li>• बेहतर दृष्टि क्षमता</li>
+                        <li>• आंखों की सूजन में कमी</li>
+                        <li>• आंखों का दर्द दूर</li>
+                        <li>• स्पष्ट एकल दृष्टि</li>
+                        <li className="font-bold">• <span className="text-green-600">विजन वेदा के उपयोग से</span> रात में ड्राइविंग में आत्मविश्वास</li>
+                        <li className="font-bold">• <span className="text-green-600">प्राकृतिक उपचार से</span> चश्मे की निर्भरता में कमी</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -346,7 +370,7 @@ export default function VisionVedaLanding() {
             </Card>
 
             {/* Near/Far Sightedness */}
-            {/* <Card className="border border-gray-200 interactive">
+            <Card className="border border-gray-200 interactive">
               <CardContent className="p-6">
                 <div className="space-y-4">
                   <h3 className="text-xl font-semibold text-center">दूर/नजदीक की दृष्टि</h3>
@@ -354,7 +378,7 @@ export default function VisionVedaLanding() {
                     <div className="space-y-2">
                       <div className="relative aspect-square">
                         <Image
-                          src="https://placeholder.com/400x400"
+                          src="https://tse2.mm.bing.net/th/id/OIP.7WLBr-nMCyvi-lSd6VABjAHaIV?pid=Api&P=0&h=180"
                           alt="Vision Problem Before"
                           width={400}
                           height={400}
@@ -362,23 +386,39 @@ export default function VisionVedaLanding() {
                         />
                       </div>
                       <p className="text-center text-red-500 font-medium">पहले</p>
+                      <ul className="text-sm text-gray-700 space-y-1 mt-2 pl-4">
+                        <li>• पढ़ने में कठिनाई</li>
+                        <li>• दूर की वस्तुओं को देखने में समस्या</li>
+                        <li>• आंखों का तनाव और सिरदर्द</li>
+                        <li>• चश्मे पर निर्भरता</li>
+                        <li className="font-bold">• मोबाइल/कंप्यूटर पर काम करने में परेशानी</li>
+                        <li className="font-bold">• लगातार चश्मे के नंबर में बदलाव</li>
+                      </ul>
                     </div>
                     <div className="space-y-2">
                       <div className="relative aspect-square">
                         <Image
-                          src="https://placeholder.com/400x400"
+                          src="https://tse3.mm.bing.net/th/id/OIP.EPtZ4eigPunTTIX-H7aoawHaE8?pid=Api&P=0&h=180"
                           alt="Vision Problem After"
                           width={400}
                           height={400}
-                          className="rounded-lg object-cover border-2 border-green-200"
+                          className="rounded-lg object-cover h-full border-2 border-green-200"
                         />
                       </div>
-                      <p className="text-center text-green-500 font-medium">बाद में</p>
+                      <p className="text-center text-green-500 font-medium">विजन वेदा के बाद</p>
+                      <ul className="text-sm text-gray-700 space-y-1 mt-2 pl-4">
+                        <li>• स्पष्ट दूर और नजदीक की दृष्टि</li>
+                        <li>• बिना चश्मे के पढ़ने की क्षमता</li>
+                        <li>• आंखों के तनाव में कमी</li>
+                        <li>• बेहतर जीवन की गुणवत्ता</li>
+                        <li className="font-bold">• <span className="text-green-600">विजन वेदा के सेवन से</span> डिजिटल स्क्रीन पर लंबे समय तक काम करने की क्षमता</li>
+                        <li className="font-bold">• <span className="text-green-600">आयुर्वेदिक फॉर्मूला के कारण</span> चश्मे के नंबर में स्थिरता</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </CardContent>
-            </Card> */}
+            </Card>
 
             {/* Eye Strain */}
             <Card className="border border-gray-200 interactive">
@@ -397,6 +437,14 @@ export default function VisionVedaLanding() {
                         />
                       </div>
                       <p className="text-center text-red-500 font-medium">पहले</p>
+                      <ul className="text-sm text-gray-700 space-y-1 mt-2 pl-4">
+                        <li>• सूखी, थकी और लाल आंखें</li>
+                        <li>• सिरदर्द और आंखों में दर्द</li>
+                        <li>• लंबे समय तक काम करने में असमर्थता</li>
+                        <li>• स्क्रीन पर फोकस करने में कठिनाई</li>
+                        <li className="font-bold">• आंखों में पानी आना और जलन</li>
+                        <li className="font-bold">• रात में नींद में कमी</li>
+                      </ul>
                     </div>
                     <div className="space-y-2">
                       <div className="relative aspect-square">
@@ -408,7 +456,15 @@ export default function VisionVedaLanding() {
                           className="rounded-lg object-cover border-2 h-full border-green-200"
                         />
                       </div>
-                      <p className="text-center text-green-500 font-medium">बाद में</p>
+                      <p className="text-center text-green-500 font-medium">विजन वेदा के बाद</p>
+                      <ul className="text-sm text-gray-700 space-y-1 mt-2 pl-4">
+                        <li>• स्वस्थ और आरामदायक आंखें</li>
+                        <li>• बिना थकान के लंबे समय तक काम</li>
+                        <li>• आंखों की लालिमा से राहत</li>
+                        <li>• बेहतर फोकस और उत्पादकता</li>
+                        <li className="font-bold">• <span className="text-green-600">विजन वेदा के उपयोग से</span> आंखों की जलन से पूर्ण मुक्ति</li>
+                        <li className="font-bold">• <span className="text-green-600">प्राकृतिक तत्वों के कारण</span> गहरी और आरामदायक नींद</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
