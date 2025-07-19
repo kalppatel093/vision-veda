@@ -241,7 +241,7 @@ export default function VisionVedaLanding() {
             <Card className="border border-gray-200">
               <CardContent className="p-6 text-center">
                 <Eye className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2">नेतियाबंद की समस्या</h3>
+                <h3 className="text-xl font-semibold mb-2">मोतियाबिंद की समस्या</h3>
                 <ul className="text-gray-600 space-y-1">
                   <li>• आंखों में दर्द और जलन</li>
                   <li>• आंखों में सूजन</li>
@@ -587,7 +587,7 @@ export default function VisionVedaLanding() {
                   <h3 className="text-3xl font-bold">विजन वेदा कम्पलीट किट</h3>
                   <div className="flex items-center justify-center space-x-3">
                     <Badge className="bg-blue-100 text-blue-700 text-lg">30 कैप्सूल</Badge>
-                    <Badge className="bg-green-100 text-green-700 text-lg">30 दिन की सप्लाई</Badge>
+                    {/* <Badge className="bg-green-100 text-green-700 text-lg">30 दिन की सप्लाई</Badge> */}
                   </div>
                   <p className="text-gray-600">प्रीमियम आयुर्वेदिक कैप्सूल + आई ड्रॉप्स</p>
                 </div>
